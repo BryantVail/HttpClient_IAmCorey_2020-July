@@ -5,4 +5,8 @@
     <RootNamespace>HttpClient_IAmCorey_2020_July</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
+  </ItemGroup>
+
 </Project>

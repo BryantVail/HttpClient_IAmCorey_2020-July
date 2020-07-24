@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SWgYsDg5liQHRlpKIDWrCx5k37zfyKUTqGhYA0srM1Yt9yzpRU/ebufGnIAIjLTpSqvugA+IUhp/R5jalylC4Q==",
+  "dgSpecHash": "nVOeuHcwaHa9rwtmw+NdVAihX0lqtKE98rMzeIQRTH18VB2mSVHZtAPW9hxPFOY+tmE/yn6q+nd2VMvEjXnrAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\bvail\\Documents\\GitHub\\HttpClient_IAmCorey_2020-July_45min\\HttpClient_IAmCorey_2020-July\\HttpClient_IAmCorey_2020-July.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bvail\\.nuget\\packages\\system.net.http.json\\3.2.1\\system.net.http.json.3.2.1.nupkg.sha512",
+    "C:\\Users\\bvail\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
   "logs": []
 }

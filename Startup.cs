@@ -29,6 +29,7 @@ namespace HttpClient_IAmCorey_2020_July
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddHttpClient(); //httpClient factory thats available to us
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
