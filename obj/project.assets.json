@@ -82,11 +82,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bvail\\Documents\\GitHub\\HttpClient_IAmCorey_2020-July_45min\\HttpClient_IAmCorey_2020-July\\HttpClient_IAmCorey_2020-July.csproj",
+      "projectUniqueName": "C:\\Users\\bvail\\Documents\\GitHub\\HttpClient_IAmTimCorey_2020-July_45min\\HttpClient_IAmCorey_2020-July\\HttpClient_IAmCorey_2020-July.csproj",
       "projectName": "HttpClient_IAmCorey_2020-July",
-      "projectPath": "C:\\Users\\bvail\\Documents\\GitHub\\HttpClient_IAmCorey_2020-July_45min\\HttpClient_IAmCorey_2020-July\\HttpClient_IAmCorey_2020-July.csproj",
+      "projectPath": "C:\\Users\\bvail\\Documents\\GitHub\\HttpClient_IAmTimCorey_2020-July_45min\\HttpClient_IAmCorey_2020-July\\HttpClient_IAmCorey_2020-July.csproj",
       "packagesPath": "C:\\Users\\bvail\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bvail\\Documents\\GitHub\\HttpClient_IAmCorey_2020-July_45min\\HttpClient_IAmCorey_2020-July\\obj\\",
+      "outputPath": "C:\\Users\\bvail\\Documents\\GitHub\\HttpClient_IAmTimCorey_2020-July_45min\\HttpClient_IAmCorey_2020-July\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
