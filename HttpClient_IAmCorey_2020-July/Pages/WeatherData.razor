@@ -1,0 +1,84 @@
+﻿@page "/weather"
+
+@inject IHttpClientFactory _clientFactory
+
+
+<h3>Weather Data</h3>
+
+@if (string.IsNullOrWhiteSpace(errorString) == false)
+{
+    <div class="h2">@errorString</div>
+}
+else if(forecast is null)
+{
+    <div class="h4">Loading...</div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Date</th>
+                <th>Weather State</th>
+                <th>Low</th>
+                <th>High</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var weatherReport in forecast.Consolidated_weather)
+            {
+                <tr>
+                    <td>@weatherReport.Applicable_date</td>
+                    <td>@weatherReport.Weather_state_name</td>
+                    <td>@weatherReport.Min_temp</td>
+                    <td>@weatherReport.Max_temp</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    WeatherForecastModel forecast;
+    string errorString;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // "LONG WAY"
+        //var request = new HttpRequestMessage(
+        //    HttpMethod.Get,
+        //    "https://www.metaWeather.com/api/location/247121700");
+
+        //var client = _clientFactory.CreateClient();
+
+        //HttpResponseMessage response = await client.SendAsync(request);
+
+        //if (response.IsSuccessStatusCode)
+        //{
+        //    forecast = 
+        //        await response.Content.ReadFromJsonAsync<WeatherForecastModel>();
+        //    errorString = null;
+        //}
+        //else
+        //{
+        //    errorString = $"There was an error getting the forecast: \n{response.ReasonPhrase}";
+        //}
+
+        var client = _clientFactory.CreateClient("meta");
+
+        try
+        {
+            forecast =
+                await client
+                .GetFromJsonAsync<WeatherForecastModel>(
+                    "location/2471217");
+            errorString = null;
+        }
+        catch(Exception ex)
+        {
+            errorString = $"There was an error getting the forecast: {ex.Message}";
+        }
+
+    }
+}
